@@ -1,39 +1,84 @@
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-    }
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+}
 
-    #calculator {
-      background-image: url('asd123.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
+.calculator {
+    box-sizing: border-box; 
+    border: 2px solid #000; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    padding: 40px;
+    background: url('about-pic.jpg') center center/cover; 
+    color: #fff;
+}
 
-    input {
-      width: 90%;
-      margin-bottom: 10px;
-      padding: 10px;
-      font-size: 1.5em;
-    }
 
-    .row {
-      display: flex;
-      justify-content: space-between;
-    }
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
 
-    button {
-      flex: 1;
-      padding: 15px;
-      font-size: 1.2em;
-      margin: 5px;
-      cursor: pointer;
-    }
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ddd;
+    color: #333;
+}
+
+button:active {
+    background-color: #bbb;
+}
+
+button2 {
+    grid-column: span 3;  
+    border-radius: 5%;   
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #444;
+    cursor: pointer;
+    background-color: #ddd;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button2:active {
+    background-color: #bbb;
+}
+
+button1 {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ddd;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
