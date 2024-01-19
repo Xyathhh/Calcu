@@ -1,0 +1,39 @@
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    #calculator {
+      background-image: url('asd123.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    input {
+      width: 90%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 1.5em;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      flex: 1;
+      padding: 15px;
+      font-size: 1.2em;
+      margin: 5px;
+      cursor: pointer;
+    }
